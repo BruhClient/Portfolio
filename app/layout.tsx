@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Sofia_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sofia_sans = Sofia_Sans({
+  variable: "--font-serif",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-sans",
+  weight : ["400","500","600","700","800"],
   subsets: ["latin"],
 });
 
@@ -23,12 +26,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <html lang="en" suppressHydrationWarning>
+      
+        <body
+        className={`${poppins.variable} ${sofia_sans.variable} font-sans antialiased `}
+      >
+        <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem
+      
       >
         {children}
+        <Footer />
+      </ThemeProvider>
+        
       </body>
+
+      
+      
     </html>
   );
 }
