@@ -26,3 +26,8 @@ export const cardVariants = {
     x : 0
   }
 }
+
+export const smoothScroll = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
+  e.preventDefault(); // Prevent default anchor behavior
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};

@@ -3,6 +3,7 @@ import { Poppins, Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 
 const sofia_sans = Sofia_Sans({
   variable: "--font-serif",
@@ -39,6 +40,7 @@ export default function RootLayout({
       >
         {children}
         <Footer />
+        <Toaster />
       </ThemeProvider>
         
       </body>

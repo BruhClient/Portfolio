@@ -3,6 +3,7 @@
 
 import events from '@/data/WorkExperienceData';
 import { motion } from 'framer-motion';
+import { BsGoogle } from 'react-icons/bs';
 
 
 
@@ -36,8 +37,8 @@ export default function ZigZagTimeline() {
 
                 {/* Card content */}
                 <div className={`b w-full md:w-1/2 ${isLeft ? "md:pl-4" : "md:pr-4"}`}>
-                  <div className="bg-muted p-6 rounded-xl shadow-md">
-                    <h3 className="text-lg font-semibold">{event.title}</h3>
+                  <div className="bg-muted p-6 rounded-xl shadow-md hover:bg-secondary hover:text-black duration-300 cursor-pointer ease-in-out transition-all">
+                    <h3 className="text-lg font-semibold flex items-center gap-2"><event.icon size={25}/>{event.title}</h3>
                     <time className="text-sm font-serif text-muted-foreground">{event.date}</time>
                     <p className="mt-2 ">{event.description}</p>
                   </div>

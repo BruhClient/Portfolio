@@ -6,7 +6,7 @@ import { MotionDiv } from './motion-wrapper'
 
 const WorkExperience = () => {
   return (
-    <div className='flex flex-col justify-center items-center w-full'>
+    <div className='flex flex-col justify-center items-center w-full' id='work-experience'>
 
       <MotionDiv className='text-3xl font-semibold' initial={{opacity : 0 , y: 20}} whileInView={{opacity : 1 , y : 0}}>
           Work Experience

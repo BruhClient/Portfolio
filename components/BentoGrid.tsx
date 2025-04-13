@@ -8,6 +8,8 @@ import { FaTelegramPlane } from 'react-icons/fa'
 import Image from 'next/image'
 import RevealText from './TextReveals'
 import { Button } from './ui/button'
+import Link from 'next/link'
+import { smoothScroll } from '@/lib/utils'
 
 const BentoGrid = () => {
   return (
@@ -40,8 +42,8 @@ const HeroBlock = () => {
             </div>
 
             
-            <button  className='self-start flex gap-2 cursor-pointer items-center mt-4 hover:text-secondary'>
-            Contact <ArrowRight size={20}/>
+            <button onClick={(e) => smoothScroll(e, "contact")}  className='self-start flex gap-2 cursor-pointer items-center mt-4 hover:text-secondary'>
+                Contact <ArrowRight size={20}/>
             </button>
         </div>
         
@@ -86,7 +88,7 @@ const ContentBlock = () => {
                     </div>
                     
                     <div className='flex gap-3'>
-                        <Button variant={"outline"}><Computer/>Work Experience</Button>
+                        <Button variant={"outline"} onClick={(e) => smoothScroll(e,"work-experience")}><Computer/>Work Experience</Button>
                         <Button>View CV</Button>
                     </div>
                     
