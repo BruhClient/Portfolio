@@ -40,18 +40,18 @@ const LearningOutcomesButton = ({
           <DialogDescription className="text-start">
             {learningOutcomes.description}
           </DialogDescription>
+          <div className="pt-3 space-y-3">
+            {learningOutcomes.outcomes.map((text) => (
+              <div
+                className="flex gap-3 items-center text-xs text-start"
+                key={text}
+              >
+                <CustomCheck />
+                {text}
+              </div>
+            ))}
 
-          {learningOutcomes.outcomes.map((text) => (
-            <div
-              className="flex gap-3 items-center text-xs text-start"
-              key={text}
-            >
-              <CustomCheck />
-              {text}
-            </div>
-          ))}
-
-          {/* {learningOutcomes.aoe.map((text) => (
+            {/* {learningOutcomes.aoe.map((text) => (
             <div
               className="flex gap-3 items-center text-xs text-start"
               key={text}
@@ -60,6 +60,7 @@ const LearningOutcomesButton = ({
               {text}
             </div>
           ))} */}
+          </div>
         </DialogHeader>
       </DialogContent>
     </Dialog>
