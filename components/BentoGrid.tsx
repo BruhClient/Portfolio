@@ -103,7 +103,6 @@ const ContentBlock = () => {
 
       <div className="flex flex-col gap-3">
         <BoxReveal>
-          {" "}
           <div className="text-3xl font-semibold">A bit more about myself.</div>
         </BoxReveal>
 
