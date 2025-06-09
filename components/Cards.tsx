@@ -29,9 +29,6 @@ export const WebsiteProjectCard = ({
   return (
     <MotionDiv
       variants={cardVariants}
-      viewport={{
-        margin: "200px",
-      }}
       className=" rounded-lg w-full overflow-hidden bg-card border-2 border-muted shadow-lg"
     >
       <img

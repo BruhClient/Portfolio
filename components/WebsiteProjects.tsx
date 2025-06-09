@@ -10,7 +10,10 @@ const WebsiteProjects = () => {
     <div>
       <MotionDiv
         className="columns-1 sm:columns-2 md:columns-3 max-w-[1400px]"
-        transition={{ staggerChildren: 0.3 }}
+        transition={{ staggerChildren: 1 }}
+        viewport={{
+          margin: "-200px",
+        }}
         initial={"initial"}
         whileInView={"visible"}
       >
