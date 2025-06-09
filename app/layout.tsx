@@ -12,7 +12,7 @@ const sofia_sans = Sofia_Sans({
 
 const poppins = Poppins({
   variable: "--font-sans",
-  weight : ["400","500","600","700","800"],
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -28,25 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      
-        <body
+      <body
         className={`${poppins.variable} ${sofia_sans.variable} font-sans antialiased `}
       >
-        <ThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem
-      
-      >
-        {children}
-        <Footer />
-        <Toaster />
-      </ThemeProvider>
-        
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="fixed z-[-2] inset-0 h-screen w-screen  bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
+          <main>{children}</main>
+          <Footer />
+          <Toaster />
+        </ThemeProvider>
       </body>
-
-      
-      
     </html>
   );
 }

@@ -1,50 +1,80 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import { MotionDiv } from './motion-wrapper'
-import { cardVariants } from '@/lib/utils'
-import Link from 'next/link'
-import Tag from './Tag'
-import { Project } from '@/types/project'
+import { MotionDiv } from "./motion-wrapper";
+import { cardVariants } from "@/lib/utils";
+import Link from "next/link";
+import { Project } from "@/types/project";
+import { Button } from "./ui/button";
+import { Brain, Github, Globe } from "lucide-react";
+import { Tech } from "@/data/TechItemsData";
+import { useRouter } from "next/navigation";
+import LearningOutcomesButton from "./LearningOutcomesButton";
 
-
-
-export const WebsiteProjectCard = ({project : {title, subText , description,heroImage,techs}} : {project : Project}) => { 
-    return <MotionDiv variants={cardVariants} className='flex flex-col gap-2' >
-      
-        <div >
-          <div className='text-xl font-medium'>
-            {title}
-          </div>
-          <div className='text-lg text-muted-foreground font-serif'>
-            {subText}
-          </div>
+export const WebsiteProjectCard = ({
+  project: {
+    title,
+    startDate,
+    heroImage,
+    endDate,
+    githubUrl,
+    techs,
+    liveWebsiteUrl,
+    description,
+    learningOutcomes,
+  },
+}: {
+  project: Project;
+}) => {
+  const router = useRouter();
+  return (
+    <MotionDiv
+      variants={cardVariants}
+      viewport={{
+        margin: "200px",
+      }}
+      className=" rounded-lg w-full overflow-hidden bg-card border-2 border-muted shadow-lg"
+    >
+      <img
+        src={heroImage}
+        alt=""
+        className="w-full max-h-[300px] object-cover cursor-pointer "
+        onClick={() => {
+          router.push(liveWebsiteUrl);
+        }}
+      />
+      <div className="px-4 py-3">
+        <div className="text-lg font-semibold">{title}</div>
+        <div className="text-sm text-muted-foreground">
+          {startDate} - {endDate}
         </div>
-        <Link href={`/projects/${title}`} className="relative w-full aspect-[16/9]">
-          <Image
-              src={heroImage} // Replace with your image path
-              alt="Responsive"
-              fill
-              className="object-cover border-2"
-              sizes="100vw"
-
-              priority
-            />
-        </Link>
- 
-       
-
-          {techs && <div className='flex gap-2'>
-              {techs.map((tech) => <Tag key={`${title} ${tech}`} tech={tech}/>)}
-            </div>}
-
-        
-        <div className='text-muted-foreground px-1'>
+        <div className="text-sm text-muted-foreground pt-1 min-h-[150px]">
           {description}
         </div>
-      
-      
-  </MotionDiv>
+        <div className="flex gap-1 flex-wrap">
+          {techs.map((item: Tech) => (
+            <div
+              className="bg-muted w-fit text-xs font-medium px-2 py-1 rounded-lg"
+              key={item}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
 
-  
-  }
+        <div className="flex gap-2 pt-3 items-center flex-wrap">
+          <Button size={"sm"} asChild>
+            <Link href={githubUrl} className="text-xs" target="_blank">
+              <Globe /> Live Website
+            </Link>
+          </Button>
+          <Button size={"sm"} asChild>
+            <Link href={githubUrl} className="text-xs" target="_blank">
+              <Github /> Source
+            </Link>
+          </Button>
+          <LearningOutcomesButton learningOutcomes={learningOutcomes} />
+        </div>
+      </div>
+    </MotionDiv>
+  );
+};
