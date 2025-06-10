@@ -15,7 +15,6 @@ import {
   TbBrandThreejs,
 } from "react-icons/tb";
 import { BsStripe } from "react-icons/bs";
-import { PiOpenAiLogo } from "react-icons/pi";
 import { FaFigma } from "react-icons/fa";
 
 const iconSize = 16;

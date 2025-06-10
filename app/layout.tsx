@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import { Toaster } from "sonner";
+import AiChat from "@/components/AiChat";
 
 const sofia_sans = Sofia_Sans({
   variable: "--font-serif",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <Toaster />
+          <AiChat />
         </ThemeProvider>
       </body>
     </html>
