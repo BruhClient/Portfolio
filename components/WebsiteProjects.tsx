@@ -3,13 +3,13 @@
 import React from "react";
 import { MotionDiv } from "./motion-wrapper";
 import { WebsiteProjectCard } from "./Cards";
-import WebsiteProjectsData from "@/data/WebsiteProjectsData";
+import WebsiteProjectsData from "@/components/data/WebsiteProjectsData";
 
 const WebsiteProjects = () => {
   return (
     <div>
       <MotionDiv
-        className="columns-1 sm:columns-2 md:columns-3 max-w-[1400px]"
+        className="grid grid-cols-1 lg:grid-cols-3 max-w-[1400px] gap-4"
         transition={{ staggerChildren: 0.1 }}
         viewport={{
           margin: "-200px",

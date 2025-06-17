@@ -40,7 +40,6 @@ const ContactForm = () => {
   const [isPending, startTransition] = useTransition();
 
   const onSubmit = (values: ContactPayload) => {
-    console.log(values);
     if (!formRef.current) return;
 
     startTransition(async () => {

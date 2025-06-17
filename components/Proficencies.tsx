@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useAnimationFrame } from "framer-motion";
-import TechItemsData from "@/data/TechItemsData";
+import TechItemsData from "@/components/data/TechItemsData";
 import { LucideIcon } from "lucide-react";
 
 export default function TechScrollBar() {

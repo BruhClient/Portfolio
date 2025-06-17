@@ -1,6 +1,6 @@
-import { Tech } from "@/data/TechItemsData";
+import { Tech } from "@/components/data/TechItemsData";
 import React from "react";
-import TechItemsData from "@/data/TechItemsData";
+import TechItemsData from "@/components/data/TechItemsData";
 import { LucideIcon } from "lucide-react";
 
 const Tag = ({ tech }: { tech: Tech }) => {

@@ -1,4 +1,4 @@
-import { Tech } from "@/data/TechItemsData";
+import { Tech } from "@/components/data/TechItemsData";
 
 enum ProjectType {
   Website,

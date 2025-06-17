@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import WebsiteProjects from "@/components/WebsiteProjects";
 import TechScrollBar from "@/components/Proficencies";
 import { WebDevIconCloud } from "@/components/WebDevIconCloud";
+import { MachineLearningIconCloud } from "@/components/MachineLearingWebCloud";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <TechScrollBar />
       <WebDevIconCloud />
       <WebsiteProjects />
+      <MachineLearningIconCloud />
       <Contact />
     </div>
   );

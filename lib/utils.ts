@@ -1,4 +1,4 @@
-import PersonalProjectData from "@/data/WebsiteProjectsData";
+import PersonalProjectData from "@/components/data/WebsiteProjectsData";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 

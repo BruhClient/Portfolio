@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Project } from "@/types/project";
 import { Button } from "./ui/button";
 import { Brain, Github, Globe } from "lucide-react";
-import { Tech } from "@/data/TechItemsData";
+import { Tech } from "@/components/data/TechItemsData";
 import { useRouter } from "next/navigation";
 import LearningOutcomesButton from "./LearningOutcomesButton";
 
@@ -60,7 +60,7 @@ export const WebsiteProjectCard = ({
 
         <div className="flex gap-2 pt-3 items-center flex-wrap">
           <Button size={"sm"} asChild>
-            <Link href={githubUrl} className="text-xs" target="_blank">
+            <Link href={liveWebsiteUrl} className="text-xs" target="_blank">
               <Globe /> Live Website
             </Link>
           </Button>
