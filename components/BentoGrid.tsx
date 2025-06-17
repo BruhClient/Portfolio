@@ -38,10 +38,6 @@ const HeroBlock = () => {
           Hey , Im Travis <span className="hand-wave">👋</span>
         </div>
         <div className="text-lg">I make cool websites like this one !</div>
-        <div className="bg-green-200 text-green-400 shadow-lg flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-semibold w-fit px-5">
-          <div className="bg-green-400 rounded-full aspect-square w-2 animate-pulse" />
-          Open to Work
-        </div>
 
         <button
           onClick={(e) => smoothScroll(e, "contact")}
@@ -109,15 +105,16 @@ const ContentBlock = () => {
         <BoxReveal>
           <div className="text-muted-foreground font-serif text-lg">
             <span className="text-foreground">
-              I'm a singaporean web developer specializing in modern, full-stack
-              applications with a focus on Next.js.{" "}
+              Im a singapore undergraduate student studying Data Science and AI
+              at Nanyang Technological University .{" "}
             </span>
-            I work comfortably across both frontend and backend, using tools
-            like Drizzle ORM, Prisma, and Flask. I have experience building
-            scalable applications with cloud databases such as Neon, integrating
-            payments with Stripe, and implementing custom authentication flows
-            using Auth.js (NextAuth). I’m passionate about building efficient,
-            well-structured systems that deliver a seamless user experience.
+            Im interested in the field of technology and always open to learn
+            more . I pride myself on being a self-directed learner , willing to
+            go beyond what necessary and improve myself . Im also currently
+            looking for interships that can provide me with relevant "real
+            world" skills to take me to the next level . Regardless of who is
+            reading this , Thanks for taking time to look at my resume . I
+            really appreciate it !
           </div>
         </BoxReveal>
 

@@ -10,9 +10,9 @@ const WebsiteProjects = () => {
     <div>
       <MotionDiv
         className="grid grid-cols-1 lg:grid-cols-3 max-w-[1400px] gap-4"
-        transition={{ staggerChildren: 0.1 }}
+        transition={{ staggerChildren: 0.3 }}
         viewport={{
-          amount: 0.1,
+          margin: "-50px",
         }}
         initial={"initial"}
         whileInView={"visible"}

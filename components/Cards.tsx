@@ -29,7 +29,7 @@ export const WebsiteProjectCard = ({
   return (
     <MotionDiv
       variants={cardVariants}
-      className=" rounded-lg w-full overflow-hidden bg-card border-2 border-muted shadow-lg"
+      className="rounded-lg w-full bg-card border-2 border-muted shadow-l h-fit"
     >
       <img
         src={heroImage}
