@@ -12,7 +12,7 @@ const WebsiteProjects = () => {
         className="grid grid-cols-1 lg:grid-cols-3 max-w-[1400px] gap-4"
         transition={{ staggerChildren: 0.1 }}
         viewport={{
-          margin: "-200px",
+          margin: "-0.2",
         }}
         initial={"initial"}
         whileInView={"visible"}
