@@ -5,7 +5,7 @@ export default [
     title: "CoachAI",
     description:
       "Utilises VAPI SDKs to create a fully functional AI tutor app with session history . This application also includes embedded checkout and flexible payments .",
-    heroImage: "/CoachAI.png",
+    heroImage: "/websites/CoachAI.png",
     techs: [
       "NextJS",
       "Drizzle ORM",
@@ -36,7 +36,7 @@ export default [
     title: "Notefinity",
     description:
       "AI SAAS Application that combines AI with traditional notetaking . It comes with a rich text editor and support for community engagements . User can talk directly to their notes using AI Chat . ",
-    heroImage: "/Notefinity.png",
+    heroImage: "/websites/Notefinity.png",
     techs: [
       "NextJS",
       "Drizzle ORM",
@@ -67,7 +67,7 @@ export default [
     title: "QuizPDF",
     description:
       "AI Platform that generates quizes , either open ended or multiple choice , based on user prompts . What sets this apart is the integration of PDF upload that can generate insightful question based on PDF Content.",
-    heroImage: "/QuizPDF.png",
+    heroImage: "/websites/QuizPDF.png",
     techs: [
       "NextJS",
       "Drizzle ORM",
@@ -101,7 +101,7 @@ export default [
     title: "ManiacalAI",
     description:
       "AI PDF Summariser with integration with AI Chat . Users can choose to share their summarised PDFs with robust encryption using bcrypt js.",
-    heroImage: "/ManiacalAI.png",
+    heroImage: "/websites/ManiacalAI.png",
     techs: [
       "NextJS",
       "Prisma ORM",
@@ -133,7 +133,7 @@ export default [
     title: "My Cook Pal",
     description:
       "Recipe App with search functionality . Users can also save their favourite recipes and see similiar recommended recipes . ",
-    heroImage: "/MyCookPal.png",
+    heroImage: "/websites/MyCookPal.png",
     techs: ["NextJS", "Shadcn", "Tailwind"],
     liveWebsiteUrl: "https://my-cook-pal.vercel.app/",
     githubUrl: "https://github.com/BruhClient/my-cook-pal.git",
@@ -156,7 +156,7 @@ export default [
     title: "Full Court Data",
     description:
       "NBA Statistic Website that tracks player stats and upcoming games . This utilises RapidAI's NBA API to its fullest capabilities . This project includes interactive charts and comment system for games .",
-    heroImage: "/FullCourtData.png",
+    heroImage: "/websites/FullCourtData.png",
     techs: ["NextJS", "Shadcn", "Tailwind"],
     liveWebsiteUrl: "https://full-court-data.vercel.app/",
     githubUrl: "https://github.com/BruhClient/FullCourtData.git",

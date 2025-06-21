@@ -18,6 +18,18 @@ export type Project = {
   learningOutcomes: LearningOutcome;
 };
 
+export type MLProject = {
+  title: string;
+  description: string;
+  subText: string;
+  heroImage: string;
+  techs: Tech[];
+  githubUrl: string;
+  startDate: string;
+  endDate: string;
+  learningOutcomes: LearningOutcome;
+};
+
 export type LearningOutcome = {
   description: string;
   aoe: string[];
