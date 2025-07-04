@@ -15,7 +15,7 @@ const projects = [
       "Inspired by Anki Flashcards , I decided to build my own flash card app that allows users to do tests with flashcards . What sets mine apart is the integration of PDF upload with AI generation.",
     skills: ["NextJS", "Typescript"],
     liveUrl: "https://pythagorai-ai.vercel.app",
-    githubUrl: "sdf",
+    githubUrl: "https://github.com/BruhClient/PythagoraiAI",
   },
   {
     name: "CoachAI",
@@ -25,7 +25,7 @@ const projects = [
       "Devloped a 'AI companion' type app that uses real time voice and user generated prompts for learning . It uses VAPI API under the hood . ",
     skills: ["NextJS", "Typescript"],
     liveUrl: "https://coach-ai-iota.vercel.app",
-    githubUrl: "asdasd",
+    githubUrl: "https://github.com/BruhClient/CoachAI",
   },
   {
     name: "Notefinity",
@@ -35,7 +35,7 @@ const projects = [
       "Developed a notetaking app that integrates AI using Pinecone and Langcain , creating a full RAG chatbot. It also comes with a community feature to comment and share notes securely.",
     skills: ["NextJS", "Typescript"],
     liveUrl: "https://notefinity-chi.vercel.app",
-    githubUrl: "",
+    githubUrl: "https://github.com/BruhClient/Notefinity",
   },
   {
     name: "QuizPDF",
@@ -45,7 +45,7 @@ const projects = [
       "Integrates PDF upload with OpenAI API. Users can either write prompts to generate questions or upload PDF files",
     skills: ["NextJS", "Typescript"],
     liveUrl: "https://www.quizpdf.net",
-    githubUrl: "",
+    githubUrl: "https://github.com/BruhClient/QuizPDF",
   },
 ];
 const Projects = () => {
