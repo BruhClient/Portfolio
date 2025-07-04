@@ -41,7 +41,7 @@ const ContactForm = () => {
             console.log("SUCCESS!");
             form.reset();
           },
-          (error) => {}
+          () => {}
         );
     });
   };

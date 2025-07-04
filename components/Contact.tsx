@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "./ui/badge";
-import { Phone, ContactIcon } from "lucide-react";
+import { Phone } from "lucide-react";
 import ContactForm from "./ContactForm";
 import { BoxReveal } from "./magicui/box-reveal";
 

@@ -1,14 +1,11 @@
 "use client";
 
 import {
-  CalendarIcon,
   Folder,
   Github,
   HomeIcon,
   Instagram,
   Linkedin,
-  MailIcon,
-  PencilIcon,
   Phone,
   Youtube,
 } from "lucide-react";
